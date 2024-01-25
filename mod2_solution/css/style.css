@@ -1,0 +1,72 @@
+/* Necessary Header Formatting */
+
+* {
+	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.col {
+	position: relative;
+	border: 1px solid black;
+	background-color: #DCDCDC;
+	padding: 10px;
+	height: 200px;
+	overflow: hidden;
+	color: black;
+	margin-right: 20px;
+	margin-bottom: 20px;
+
+}
+.row {
+	width: 100%
+}
+
+h1 {
+	text-align: center;
+}
+
+.green{
+	background-color: green;
+	border: solid black 1px;
+}
+
+.yellow{
+	background-color: yellow;
+	border: solid black 1px;
+}
+
+.red {
+	background-color: red;
+	color: white;
+	border: solid white 1px;
+}
+.topright {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	font-weight: bold;
+	font-size: 125%;
+
+}
+
+/* Media Queries */
+
+/* Large Query */
+@media (min-width: 992px) {
+	.col-lg-4 {
+		float: left;
+		width: calc(33% - 20px);
+	}
+}
+/* Medium Query */
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-6 {
+		float: left;
+		width: calc(50% - 20px);
+	}
+	.col-md-12 {
+		float: left;
+	}
+	}
+
+
